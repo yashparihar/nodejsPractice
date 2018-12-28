@@ -5,7 +5,6 @@ var app = express();
 var apicontroller = require('./controllers/apicontroller');
 var htmlcontroller = require('./controllers/htmlcontroller');
 
-
 var port = process.env.PORT || 3000;
 
 // MIDDLEWARE ADDED - SAYING TO REFER TO SPECIFIED PATH FOR GIVEN PATH
@@ -19,11 +18,13 @@ app.use('/', function(req,res,next) {
     next();  // RUN THE NEXT MIDDLEWARE : HERE USE,GET ALL ARE MIDDLEWARE
 })
 
+app.get("/", function(req,res) {
+    res.send("Home page")
+} )
 
-htmlcontroller(app)
+
+app.use('/file' , htmlcontroller )
+
 apicontroller(app)
-
-
-
 
 app.listen(port);

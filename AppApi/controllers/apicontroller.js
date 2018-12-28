@@ -12,5 +12,4 @@ module.exports = function (app) {
         res.send("Thank you");
         console.log("body:---", req.body);
     })
-
 }

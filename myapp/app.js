@@ -19,6 +19,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/', function(req,res,next) {
+  console.log("req url: ", req.url, req.body);
+  next();  // RUN THE NEXT MIDDLEWARE : HERE USE,GET ALL ARE MIDDLEWARE
+})
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
