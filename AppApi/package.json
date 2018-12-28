@@ -1,0 +1,31 @@
+{
+  "name": "nodepract",
+  "version": "1.0.0",
+  "description": "Practice module for nodejs",
+  "main": "Events.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashparihar/nodejsPractice.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "server"
+  ],
+  "author": "yash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yashparihar/nodejsPractice/issues"
+  },
+  "homepage": "https://github.com/yashparihar/nodejsPractice#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.9"
+  }
+}
