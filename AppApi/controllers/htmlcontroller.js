@@ -48,7 +48,12 @@ router.get('/example/d', [cb0, cb1], function (req, res, next) {
 })
 
 router.route('/book')
-    .get(function (req, res) {
+    .get(
+        (r,re,next) => {
+            console.log("some ");
+            next();
+        } ,
+        (req, res) => {
         res.send('Get a random book')
     })
     .post(function (req, res) {
