@@ -1,0 +1,48 @@
+#
+# Copyright IBM Corp All Rights Reserved
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+version: '2'
+
+networks:
+  dude:
+
+volumes:
+  myvol1:
+
+
+services:
+
+  nodeserver:
+    image: node:latest
+    ports:
+      - "3000:3000"
+    volumes:
+      - /home/yash/yash_workspace/practise/nodePract/AppApi/:/api/
+    container_name: nodeserver
+    command: bash -c "cd api && ls && npm start" 
+    networks:
+      - dude
+
+  reactapp:
+    container_name: reactapp
+    image: node:latest
+    ports:
+      - "8080:3000"
+    volumes:
+      - /home/yash/yash_workspace/practise/nodePract/reactapp/:/reactapp/
+    working_dir: /reactapp
+    command: npm start
+    networks:
+      - dude
+
+  couchdata:
+    image: couchdb:latest
+    ports:
+      - "5985:5984"
+    volumes:
+      - myvol1:/opt/couchdb/data
+    container_name: couchdata
+    networks:
+      - dude

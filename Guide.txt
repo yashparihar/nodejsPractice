@@ -1,3 +1,27 @@
 continue to play with express in Appapi
 
 resouce: https://expressjs.com/en/guide/writing-middleware.html
+]
+docker run --rm -it -p 4369:4369/tcp -p 5984:5984/tcp -p 9100:9100/tcp couchdb:latest
+
+docker run -d --name=couchdb3 -v myvol1:/opt/couchdb/data -p 4369:4369/tcp -p 5984:5984/tcp -p 9100:9100/tcp couchdb:latest
+
+docker run -d --name=couchdb2 -v myvol1:/opt/couchdb/data -p 4368:4369/tcp -p 5985:5984/tcp -p 9101:9100/tcp couchdb:latest
+
+
+docker run -d --name=couchdb4 -v myvol1:/opt/couchdb/data -p 4361:4369/tcp -p 5981:5984/tcp -p 9101:9100/tcp couchdb:latest
+
+docker run -d --name=couchdb5 -v /home/yash/yash_workspace/practise/nodePract/data:/opt/couchdb/data -p 4368:4369/tcp -p 5981:5984/tcp -p 9103:9100/tcp couchdb:latest
+
+docker run -d --name=couchdb6 -v /home/yash/yash_workspace/practise/nodePract/data:/opt/couchdb/data -p 4369:4369/tcp -p 5983:5984/tcp -p 9100:9100/tcp couchdb:latest
+
+
+Create docker compose while creating 3 containers
+volume as specified 
+and Network specified
+Run and make interaction between them and check logs
+
+con_a : couchdb
+con_b : nserver
+con_c : reatapp gui
+

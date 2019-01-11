@@ -1,0 +1,19 @@
+- how to create container
+- build image out of container
+- create container from image
+- start an exited container and attahc to its shell
+- show docker network and also inspect 
+- create docker network
+- connect/disconnect to docker network
+
+
+ tsk:-
+
+ create a running node module 
+ dockerfile mentioning : nodejs , copy file to container , npm install , cmd , working dir , expose port , estalish on a network , 
+ create a container out of it
+ view on the browser runniong project
+ create image out of it
+ 
+
+ 
