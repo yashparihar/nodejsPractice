@@ -1,0 +1,221 @@
+<html>
+
+<head>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"> -->
+    <style>
+        /* @media print{*/
+        body {
+            width: 100%;
+            /* width: 595px; */
+            /* height: 29.7cm; */
+            /* margin: 30mm 45mm 30mm 45mm; */
+            /* change the margins as you want them to be. */
+        }
+
+        .col-6 {
+            width: 48%;
+            float: left;
+            padding: 10px 0px;
+        }
+
+        .price-table,
+        .price-table td,
+        .price-table th {
+            border: 1px solid #065f90;
+            text-align: left;
+        }
+
+        .price-table {
+            border-collapse: collapse;
+            width: 97%;
+            margin-top: 10px;
+        }
+
+        .price-table th,
+        .price-table td {
+            padding: 15px;
+        }
+
+        /* th{
+            background-color:blue;
+            padding:0px;
+        } */
+
+        /*}*/
+        .col-12 {
+            width: 96%;
+            float: left;
+        }
+
+        .row-lim {
+            /* width: 585px; */
+        }
+
+        .container {
+            /* max-width: 410vh; */
+            /* margin-left:22px; margin-right:22px; */
+        }
+
+        .logo-img {
+            /* width: 50%; */
+            height: 80px;
+        }
+
+        .font-bold {
+            font-weight: bold;
+        }
+
+        .title {
+            font-size: 30px;
+        }
+
+        .padd-top {
+            padding-top: 0.5rem !important;
+        }
+
+        .item-head {
+            background: #065f90;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            color: white;
+            font-weight: bold;
+            /* max-width: 97%; */
+        }
+
+        .float-left {
+            float: left;
+        }
+
+        .inv-title {
+            color: #065f90;
+            margin-bottom: 0.5rem !important;
+            margin-top: 0.5rem !important;
+        }
+
+        .item-section {
+            border: 1px solid #8080804d;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        /* .row{display: flex; flex-wrap: wrap;}*/
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <div class="head row-lim">
+            <div class="company-logo col-6">
+                <img class="logo-img" src=https://d1xil3xx949y53.cloudfront.net/development/user/1535197051357czuvb.jpg
+                    alt="logo">
+
+            </div>
+            <div class="title col-6"> <span class="float-right mr-2">TAX INVOICE</span> </div>
+        </div>
+        <div class="col-12 mt-auto text-right">
+            <div class="padd-top">
+                <div class="font-bold float-left"> Invoice#: </div>
+                <div class="">
+                    0a0e7018-ccda-426e-9852-ff80ac73c82d
+                </div>
+            </div>
+            <div class="padd-top">
+                <div class="font-bold float-left"> Invoice Date: </div>
+                <div class="">
+                    Feb 26, 2019
+                </div>
+            </div>
+
+        </div>
+        <table style="width:96%;">
+            <tr>
+                <td class="font-bold">To : Roshni pvt.ltd</td>
+                <td class="font-bold">From : Jumbo Elocronics Private Limited</td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        202-203, Baleshwar Avenue, Opposite Rajpath Club, SG Highway, Ahmedabad, Gujarat 380054, India
+                    </div><!-- <div> buyer_email </div>-->
+                    <div>
+                        +918745954784
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        202-203, Baleshwar Avenue, Opposite Rajpath Club, SG Highway, Ahmedabad, Gujarat 380054, India
+                    </div><!-- <div> supplier_email </div>-->
+                    <div>
+                        +919878457845
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+
+
+
+
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>Items</th>
+                    <th>QTY</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>test test test</td>
+                    <td>1</td>
+                    <td>$241878.56</td>
+                    <td>$241878.56</td>
+
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align:right;"> subTotal </td>
+                    <td>$241878.56</td>
+
+                </tr>
+            </tbody>
+        </table>
+
+
+        <!-- ------------------------------------------ -->
+
+        <!-- <div class="row-lim m-0">
+            <div class="col-12 item-head p-3">
+                <div class="row">
+                    <div class="col-5"> ITEMS </div>
+                    <div class="col-2"> QTY </div>
+                    <div class="col-2"> PRICE </div>
+                    <div class="col-3"> TOTAL </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row-lim m-0">
+            <div class="col-5">
+                test
+            </div>
+            <div class="col-2">
+                1
+            </div>
+            <div class="col-2"> $
+                241878.56
+            </div>
+            <div class="col-3"> $
+                241878.56
+            </div>
+        </div> -->
+        <!-- ---------------------------------------- -->
+
+
+        <!-- <div class="row-lim m-0"> <div class="col-12 my-2"> <div class="row"> <div class="col-5"></div><div class="col-2"></div><div class="col-2"> TAX (0.5%) </div><div class="col-3"> + 356 </div></div></div></div>-->
+
+    </div>
+</body>
+
+</html>

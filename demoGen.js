@@ -1,6 +1,7 @@
 
 let i=0;
 let d = false;
+console.log('TCL: d', d)
 
 let lop = () => { 
     console.log('yep.. ');

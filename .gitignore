@@ -1,2 +1,10 @@
 .history
 /.history
+package-lock.json
+/package-lock.json
+node_modules
+/node_modules
+/reactapp/node_modules
+/reactapp/package-lock.json
+/AppApi/node_modules
+/AppApi/package-lock.json

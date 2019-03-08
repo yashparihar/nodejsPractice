@@ -1,13 +1,5 @@
+var fs = require("fs");
+var filename = "./input.txt";
+var buf = fs.readFileSync(filename, "utf8");
 
-
-obj  = {
-    a:11,
-    b:12,
-    c:15
-}
-
-newobj = {
-    ...obj,
-    b:99
-}
-console.log(newobj)
+console.log(buf);

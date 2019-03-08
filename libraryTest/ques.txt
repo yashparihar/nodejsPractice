@@ -1,0 +1,19 @@
+- convert html to pdf where each pages of pdf must have small image at the bottom of page except last page in NODEJS
+
+I have this template : mytemplate.ejs file 
+I want to convert to html with dynamic data fed to template file
+With its dynamic content i want to create pdf
+
+Now here is where My Main Issue arises
+
+My pdf page could be of multiple page.
+On each page(except the last page) i want an image at the bottom of the page
+
+For Example;
+My html content are such that 3 page pdf gets generated;
+So now i want image at every footer of 1st and 2nd page (not on 3rd page)
+
+Failed solution:-
+  - Using Puppeteer i was able to put image in the footer but how would i 
+
+Is their any solution for this 

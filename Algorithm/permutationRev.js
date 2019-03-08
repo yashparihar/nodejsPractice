@@ -16,7 +16,6 @@ let traverse = (ind) => {
   if (processed.includes(ind))
     return 0;
   
-
   let rep = unprocessed.splice(unprocessed.indexOf(ind), 1)
   processed.push( ind );
   return 1 + traverse( ele[ind] - 1 ) 

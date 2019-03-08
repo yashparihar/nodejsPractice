@@ -1,0 +1,17 @@
+{
+  "name": "librarytest",
+  "version": "1.0.0",
+  "description": "testing diff libraries",
+  "main": "htmlToPdf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yash",
+  "license": "ISC",
+  "dependencies": {
+    "html-pdf": "^2.2.0",
+    "pdf-thumbnail": "^1.0.6",
+    "puppeteer": "^1.12.2",
+    "puppeteer-core": "^1.12.2"
+  }
+}

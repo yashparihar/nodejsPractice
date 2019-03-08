@@ -23,11 +23,17 @@
   },
   "homepage": "https://github.com/yashparihar/nodejsPractice#readme",
   "dependencies": {
+    "aws-sdk": "^2.400.0",
+    "bluebird": "^3.5.3",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "file-type": "^10.7.1",
+    "fs": "0.0.1-security",
+    "html-pdf": "^2.2.0",
     "nano": "^8.0.0",
-    "nodemon": "^1.18.9"
+    "nodemon": "^1.18.9",
+    "pdf-thumbnail": "^1.0.6"
   }
 }
